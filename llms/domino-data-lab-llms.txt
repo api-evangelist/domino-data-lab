@@ -1,0 +1,28 @@
+# Domino Data Lab
+
+> Domino Data Lab is an enterprise MLOps and AI platform that lets data science and machine learning teams build, deploy, monitor, and govern models and data-science applications across hybrid and multi-cloud infrastructure. It exposes a REST Platform API, a Domino Data API, and official Python and R clients, plus an official MCP server for AI-assisted workflows.
+
+## APIs
+- [Domino Platform API Reference](https://docs.dominodatalab.com/en/cloud/api_guide/8c929e/domino-platform-api-reference/): REST API for apps, projects, model serving, environments, workspaces, cost, users/orgs, extensions, and data sources.
+- [Domino Data API](https://docs.dominodatalab.com/en/cloud/api_guide/140b48/domino-data-api/): Access Data features — data sources, datasets, and blobs.
+- [Model Monitoring API](https://docs.dominodatalab.com/en/cloud/api_guide/c6b52a/model-monitoring-api/): Model quality and drift monitoring.
+
+## SDKs & tooling
+- [python-domino (dominodatalab)](https://pypi.org/project/dominodatalab/): Official Python client — `pip install dominodatalab`.
+- [domino-data](https://github.com/dominodatalab/domino-data): Official Domino Data API Python client.
+- [DominoDataR](https://github.com/dominodatalab/DominoDataR): Official R bindings.
+- [domino-vscode](https://github.com/dominodatalab/domino-vscode): Official VS Code extension.
+- [Domino Plugin for Claude Code](https://github.com/dominodatalab/domino-claude-plugin): Official plugin bundling the Domino MCP server, 20 skills, and 4 slash commands.
+
+## Docs
+- [API Guide](https://docs.dominodatalab.com/en/cloud/api_guide/f35c19/api-guide/): Reference for data science developers.
+- [The python-domino Library](https://docs.dominodatalab.com/en/cloud/api_guide/c5ef26/the-python-domino-library/): Python SDK guide.
+- [Documentation portal](https://docs.dominodatalab.com/): User, admin, and developer guides.
+- [GitHub organization](https://github.com/dominodatalab): Open-source clients, VS Code extension, and Terraform modules.
+
+## Artifacts
+- Authentication: authentication/domino-data-lab-authentication.yml
+- Packages / SDKs: packages/domino-data-lab-packages.yml
+- MCP server: mcp/domino-data-lab-mcp.yml
+- Conventions: conventions/domino-data-lab-conventions.yml
+- Domain security: security/domino-data-lab-domain-security.yml

@@ -1,8 +1,28 @@
 aid: domino-data-lab
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/domino-data-lab.png
 name: Domino Data Lab
-description: Domino Data Lab is a company surfaced as a portfolio company of bloomberg-beta and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Domino Data Lab is an enterprise MLOps and AI platform used by data science and
+  machine learning teams to build, deploy, monitor, and govern models and data-science
+  applications across hybrid and multi-cloud infrastructure. The platform exposes a
+  REST Platform API (apps, projects, model serving, environments, workspaces, cost,
+  users/orgs, extensions, and data sources), a separate Domino Data API for data
+  access, and a Model Monitoring API, alongside official Python (python-domino) and
+  R clients, a VS Code extension, and an official Model Context Protocol server
+  distributed through its Claude Code plugin. Originally surfaced as a portfolio
+  company of bloomberg-beta and enriched from its public developer surface.
 url: https://raw.githubusercontent.com/api-evangelist/domino-data-lab/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,9 +32,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- MLOps
+- Data Science
+- Machine Learning
+- AI Platform
+- Model Monitoring
+- Enterprise AI
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,4 +49,41 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://www.dominodatalab.com/
+  url: https://domino.ai/
+- type: DeveloperPortal
+  url: https://docs.dominodatalab.com/
+- type: Documentation
+  url: https://docs.dominodatalab.com/
+- type: APIReference
+  url: https://docs.dominodatalab.com/en/cloud/api_guide/8c929e/domino-platform-api-reference/
+- type: GettingStarted
+  url: https://docs.dominodatalab.com/en/cloud/api_guide/f35c19/api-guide/
+- type: Blog
+  url: https://domino.ai/blog
+- type: GitHubOrganization
+  url: https://github.com/dominodatalab
+- type: Pricing
+  url: https://domino.ai/pricing
+- type: TermsOfService
+  url: https://domino.ai/legal/terms
+- type: PrivacyPolicy
+  url: https://domino.ai/legal/privacy-policy
+- type: Authentication
+  url: authentication/domino-data-lab-authentication.yml
+- type: Packages
+  url: packages/domino-data-lab-packages.yml
+- type: SDKs
+  url: packages/domino-data-lab-packages.yml
+- type: MCPServer
+  url: mcp/domino-data-lab-mcp.yml
+- type: Conventions
+  url: conventions/domino-data-lab-conventions.yml
+- type: LLMsTxt
+  url: llms/domino-data-lab-llms.txt
+- type: DomainSecurity
+  url: security/domino-data-lab-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

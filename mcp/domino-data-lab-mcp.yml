@@ -1,0 +1,27 @@
+generated: '2026-07-18'
+method: searched
+status: published
+source: https://github.com/dominodatalab/domino-claude-plugin
+server:
+  name: domino
+  transport: stdio
+  official: true
+  distribution: Vendored inside the official Domino Data Lab Plugin for Claude Code (domino-claude-plugin); the MCP server starts automatically when the plugin is enabled. Requires Claude Code CLI v1.0.33+ and the uv package manager.
+  license: MIT
+tools:
+  # Tool names below reflect the capabilities documented in the plugin README; exact
+  # registered tool identifiers are defined by the vendored server.
+  - name: run_job
+    description: Run a Domino job on the platform.
+  - name: get_job_status
+    description: Check the status of a running or completed Domino job.
+  - name: get_job_results
+    description: Retrieve the results/outputs of a completed Domino job.
+  - name: sync_files
+    description: Sync files with a DFS-based Domino project.
+notes: >-
+  The plugin additionally ships 20 auto-invoked skills and 4 slash commands covering
+  workspace management (Jupyter/VS Code/RStudio), job execution and scheduling,
+  environment and dataset management, app deployment (React/Streamlit/Dash), model
+  endpoints and monitoring, experiment tracking, GenAI tracing, and distributed
+  computing (Spark/Ray/Dask).

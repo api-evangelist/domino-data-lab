@@ -1,0 +1,32 @@
+generated: '2026-07-18'
+method: searched
+source: https://pypi.org/project/dominodatalab/ + https://github.com/orgs/dominodatalab/repositories
+packages:
+  - language: python
+    registry: pypi
+    name: dominodatalab
+    url: https://pypi.org/project/dominodatalab/
+    install: pip install dominodatalab
+    repo: https://github.com/dominodatalab/python-domino
+    version: 2.2.0
+    official: true
+    description: Official Python bindings for the Domino platform APIs (python-domino). Ships with the Domino Standard Environment (DSE).
+  - language: python
+    registry: github
+    name: domino-data
+    url: https://github.com/dominodatalab/domino-data
+    install: pip install dominodatalab-data
+    official: true
+    description: Domino Data API client for interacting with Access Data features (data sources, datasets, blobs).
+  - language: r
+    registry: github
+    name: DominoDataR
+    url: https://github.com/dominodatalab/DominoDataR
+    official: true
+    description: Official R language bindings for the Domino platform.
+  - language: vscode-extension
+    registry: github
+    name: domino-vscode
+    url: https://github.com/dominodatalab/domino-vscode
+    official: true
+    description: Official Domino Data Lab Visual Studio Code extension for developing against a Domino instance.

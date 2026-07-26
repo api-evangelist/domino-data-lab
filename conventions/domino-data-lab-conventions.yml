@@ -1,0 +1,27 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.dominodatalab.com/en/cloud/api_guide/8c929e/domino-platform-api-reference/
+authentication:
+  style: apiKey header
+  header: X-Domino-Api-Key
+  ref: authentication/domino-data-lab-authentication.yml
+base_url:
+  pattern: https://<your-domino-deployment>/api/{service}/{version}/...
+  note: >-
+    Base host is the customer's own Domino deployment (self-managed Kubernetes install
+    or Domino Cloud). There is no single shared public API host.
+versioning:
+  scheme: uri-path
+  form: /api/{service}/{version}
+  versions_observed: [v1, v2, v4, beta]
+  note: Versions are per-service (e.g. /api/apps/beta/apps, /api/cost/v2/allocation, /api/v4/ppm/admin/config).
+idempotency:
+  supported: unknown
+  note: No idempotency-key contract is documented in the public API reference; not asserting one.
+pagination:
+  supported: unknown
+  note: Not documented consistently across the public API reference; not asserting a style.
+error_envelope:
+  note: See errors surfaced per endpoint in the platform API reference; no single documented RFC 9457 problem+json envelope observed.
+cross_links:
+  authentication: authentication/domino-data-lab-authentication.yml
