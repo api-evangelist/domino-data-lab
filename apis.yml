@@ -1,4 +1,5 @@
 aid: domino-data-lab
+
 deliveryModel:
   model: saas
   open_source: false
@@ -10,6 +11,7 @@ deliveryModel:
   - pricing
   generated: '2026-08-28'
   method: derived
+
 accessModel:
   pricing: unknown
   onboarding: unknown
@@ -23,28 +25,37 @@ accessModel:
   - security
   generated: '2026-09-03'
   method: derived
+
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/domino-data-lab.png
+
 name: Domino Data Lab
-description: >-
-  Domino Data Lab is an enterprise MLOps and AI platform used by data science and
-  machine learning teams to build, deploy, monitor, and govern models and data-science
-  applications across hybrid and multi-cloud infrastructure. The platform exposes a
-  REST Platform API (apps, projects, model serving, environments, workspaces, cost,
-  users/orgs, extensions, and data sources), a separate Domino Data API for data
-  access, and a Model Monitoring API, alongside official Python (python-domino) and
-  R clients, a VS Code extension, and an official Model Context Protocol server
-  distributed through its Claude Code plugin. Originally surfaced as a portfolio
-  company of bloomberg-beta and enriched from its public developer surface.
+
+description: Domino Data Lab is an enterprise MLOps and AI platform used by data science and machine learning teams to build, deploy, monitor,
+  and govern models and data-science applications across hybrid and multi-cloud infrastructure. The platform exposes a REST Platform API (apps,
+  projects, model serving, environments, workspaces, cost, users/orgs, extensions, and data sources), a separate Domino Data API for data access,
+  and a Model Monitoring API, alongside official Python (python-domino) and R clients, a VS Code extension, and an official Model Context Protocol
+  server distributed through its Claude Code plugin. Originally surfaced as a portfolio company of bloomberg-beta and enriched from its public
+  developer surface.
+
 url: https://raw.githubusercontent.com/api-evangelist/domino-data-lab/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: vc-portfolio
+
 x-backed-by:
 - bloomberg-beta
+
 x-tier: stub
+
 x-tier-reason: portfolio-lead
+
 specificationVersion: '0.23'
+
 created: '2026-07-17'
+
 modified: '2026-07-18'
+
 tags:
 - Company
 - MLOps
@@ -53,6 +64,7 @@ tags:
 - AI Platform
 - Model Monitoring
 - Enterprise AI
+
 tags_raw:
 - Company
 - MLOps
@@ -61,13 +73,36 @@ tags_raw:
 - AI Platform
 - Model Monitoring
 - Enterprise AI
-apis: []
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: CLI
+  url: cli/domino-data-lab-cli.yml
+- type: ChangeLog
+  url: changelog/domino-data-lab-changelog.yml
+- type: Compliance
+  url: https://trust.domino.ai/
+- type: Conformance
+  url: conformance/domino-data-lab-conformance.yml
+- type: AgentCard
+  url: a2a/domino-data-lab-a2a.yml
+- type: WellKnown
+  url: well-known/domino-data-lab-well-known.yml
+- type: Hosts
+  url: hosts/domino-data-lab-hosts.yml
+- type: Vendors
+  url: vendors/domino-data-lab-vendors.yml
+- type: Support
+  url: https://support.domino.ai/support/s/
+- type: ChangeLog
+  url: https://docs.domino.ai/release-notes/cloud-release
+- type: TrustCenter
+  url: security/domino-data-lab-trust-center.yml
 - type: Website
   url: https://domino.ai/
 - type: DeveloperPortal
@@ -88,6 +123,8 @@ common:
   url: https://domino.ai/legal/terms
 - type: PrivacyPolicy
   url: https://domino.ai/legal/privacy-policy
+- type: Postman
+  url: https://www.postman.com/dominodatalab/workspace
 - type: Authentication
   url: authentication/domino-data-lab-authentication.yml
 - type: Packages
@@ -102,6 +139,22 @@ common:
   url: llms/domino-data-lab-llms.txt
 - type: DomainSecurity
   url: security/domino-data-lab-domain-security.yml
+
+apis:
+- name: Domino Platform API
+  description: REST Platform API exposing apps, projects, model serving, environments, workspaces, cost, users, orgs, extensions, and data sources.
+  humanURL: https://docs.dominodatalab.com/en/cloud/api_guide/8c929e/domino-platform-api-reference/
+  baseURL: null
+  aid: domino-data-lab:domino-platform-api
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: The provider's documentation pages are HTML without a published OpenAPI, AsyncAPI, GraphQL, gRPC, or WSDL contract.
+  evidence:
+  - url: https://docs.dominodatalab.com/en/cloud/api_guide/8c929e/domino-platform-api-reference/
+    status: 200
+
 x-enrichment:
   date: '2026-07-19'
   status: backfilled

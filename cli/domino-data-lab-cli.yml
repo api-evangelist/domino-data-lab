@@ -1,0 +1,47 @@
+generated: '2026-10-04'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.domino.ai/cloud/reference/cli
+sources:
+- https://docs.domino.ai/cloud/reference/cli
+- https://docs.domino.ai/cloud/reference/cli/install-the-cli
+- https://docs.domino.ai/cloud/reference/cli/cli-reference
+- https://docs.domino.ai/cloud/reference/cli/download-files-with-the-cli
+install:
+- method: headless
+  command: apt install openjdk-8-jre-headless
+- method: headless
+  command: wget https://<domino-url>/download/client/unix -O /tmp/domino-install-unix.sh
+- method: headless
+  command: sh /tmp/domino-install-unix.sh
+- method: headless
+  command: sed -i 's/^assistive_technologies=/#assistive_technologies=/g' /etc/java-8-openjdk/accessibility.properties
+- method: login
+  command: domino login https://<your-domino-url>
+- method: login-device
+  command: domino login --device https://<your-domino-url>
+commands:
+- group: run
+  commands:
+  - domino run <file> [args…]
+  - domino run --wait <file> [args…]
+  - domino run --direct "<shell‑command>"
+  - domino run --no-sync <file> [args…]
+  - domino run --tier "<tier>" <file> [args…]
+  - domino run --local "<command>"
+- group: project
+  commands:
+  - domino create [projectName]
+  - domino init [projectName]
+  - domino get <username>/projectName
+  - domino restore
+  - domino sync
+  - domino download
+  - domino upload [-m "message"]
+- group: dataset
+  commands:
+  - domino upload-dataset [options] <project-owner>/<project-name>/<dataset-name> <folder-path>
+  - domino download-results [--filter '<pattern>'] <runId|runNumber>
+binary: domino
+docs: https://docs.domino.ai/cloud/reference/cli
+note: 1 extracted row(s) were dropped because their quote was not on the page.

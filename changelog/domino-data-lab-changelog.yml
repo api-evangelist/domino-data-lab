@@ -1,0 +1,24 @@
+generated: '2026-10-04'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.domino.ai/release-notes/cloud-release
+sources:
+- https://docs.domino.ai/release-notes/cloud-release
+- https://docs.domino.ai/cloud/platform-capabilities/features/apps/app-logs-and-versioning/understanding-app-usage
+- https://docs.domino.ai/cloud/platform-capabilities/features/apps/app-logs-and-versioning/autoscaling-apps
+- https://docs.dominodatalab.com/release_notes/
+entries:
+- breaking: true
+  highlights:
+  - Cloud Release 93 lets Governance visibility rules read numeric answers, sends in-app notifications for Governance events, adds a Trigger column
+    to the Jobs table, and redesigns the Git reference picker.
+  - Policy visibility rules can now read answers to numeric questions through a numericInputs map, so a rule can show a question or evidence set
+    only above a threshold.
+  - Governance now sends an in-app Domino notification alongside the existing email when an approval is requested, a finding is assigned to you,
+    a finding review is requested, a finding reaches a final state, or a bundle stage is assigned to you.
+  - Domino endpoint Viewers keep access to an endpoint’s overview, versions list, and tester, but can no longer open version details, logs, or
+    monitoring results; those requests now return an error.
+  date: '2026-09-30'
+current_version: Cloud Release 93
+note: 'Versioning scheme: "Cloud Release <number>"'
+docs: https://docs.domino.ai/release-notes/cloud-release

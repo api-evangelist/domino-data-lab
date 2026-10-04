@@ -1,0 +1,158 @@
+generated: '2026-10-04'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 13
+  own: 5
+  other_domain: 5
+  platform: 3
+  roles:
+  - api
+  - collections
+  - docs
+  - other
+  - portal
+  - source
+  - support
+  - website
+hosts:
+- host: api.domino.ai
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: domino.ai
+  role: api
+  relation: own
+- host: api.dominodatalab.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: dominodatalab.com
+  role: api
+  relation: other-domain
+- host: docs.cloud.google.com
+  found_by:
+  - docs-index
+  types: []
+  serves:
+  - docs
+  registrable_domain: google.com
+  role: docs
+  relation: other-domain
+- host: docs.domino.ai
+  found_by:
+  - probed
+  - site-links
+  - docs-index
+  - spec-found
+  - contract-discovery
+  - well-known
+  types: []
+  serves:
+  - docs
+  - spec
+  registrable_domain: domino.ai
+  role: docs
+  relation: own
+- host: docs.dominodatalab.com
+  found_by:
+  - pointer
+  - apis[]
+  - probed
+  - docs-index
+  - contract-discovery
+  - well-known
+  types:
+  - DeveloperPortal
+  - Documentation
+  - APIReference
+  - GettingStarted
+  serves:
+  - docs
+  registrable_domain: dominodatalab.com
+  role: portal
+  relation: other-domain
+- host: docs.pinecone.io
+  found_by:
+  - docs-index
+  types: []
+  serves:
+  - docs
+  registrable_domain: pinecone.io
+  role: docs
+  relation: other-domain
+- host: domino.ai
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  types:
+  - Website
+  - Blog
+  - Pricing
+  - TermsOfService
+  - PrivacyPolicy
+  serves: []
+  registrable_domain: domino.ai
+  role: website
+  relation: own
+- host: explore.domino.ai
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: domino.ai
+  role: other
+  relation: own
+- host: github.com
+  found_by:
+  - pointer
+  types:
+  - GitHubOrganization
+  serves: []
+  registrable_domain: github.com
+  role: source
+  relation: platform
+- host: qdrant.tech
+  found_by:
+  - docs-index
+  types: []
+  serves:
+  - docs
+  registrable_domain: qdrant.tech
+  role: other
+  relation: other-domain
+- host: raw.githubusercontent.com
+  found_by:
+  - spec-found
+  types: []
+  serves:
+  - spec
+  registrable_domain: githubusercontent.com
+  role: other
+  relation: platform
+- host: support.domino.ai
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: domino.ai
+  role: support
+  relation: own
+- host: www.postman.com
+  found_by:
+  - pointer
+  types:
+  - Postman
+  serves: []
+  registrable_domain: postman.com
+  role: collections
+  relation: platform

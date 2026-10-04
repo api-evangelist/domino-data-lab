@@ -1,28 +1,39 @@
-# Domino Data Lab
+# Domino
 
-> Domino Data Lab is an enterprise MLOps and AI platform that lets data science and machine learning teams build, deploy, monitor, and govern models and data-science applications across hybrid and multi-cloud infrastructure. It exposes a REST Platform API, a Domino Data API, and official Python and R clients, plus an official MCP server for AI-assisted workflows.
+> Domino helps enterprises build, deliver, and govern mission-critical AI solutions with flexible orchestration, controlled access, reproducible results, and audit trails.
 
-## APIs
-- [Domino Platform API Reference](https://docs.dominodatalab.com/en/cloud/api_guide/8c929e/domino-platform-api-reference/): REST API for apps, projects, model serving, environments, workspaces, cost, users/orgs, extensions, and data sources.
-- [Domino Data API](https://docs.dominodatalab.com/en/cloud/api_guide/140b48/domino-data-api/): Access Data features — data sources, datasets, and blobs.
-- [Model Monitoring API](https://docs.dominodatalab.com/en/cloud/api_guide/c6b52a/model-monitoring-api/): Model quality and drift monitoring.
+- [Cloud (1135 pages)](https://docs.domino.ai/_llms/cloud.md): Documentation for Cloud.
+- [6.3 (1208 pages)](https://docs.domino.ai/_llms/6-3.md): Documentation for 6.3.
 
-## SDKs & tooling
-- [python-domino (dominodatalab)](https://pypi.org/project/dominodatalab/): Official Python client — `pip install dominodatalab`.
-- [domino-data](https://github.com/dominodatalab/domino-data): Official Domino Data API Python client.
-- [DominoDataR](https://github.com/dominodatalab/DominoDataR): Official R bindings.
-- [domino-vscode](https://github.com/dominodatalab/domino-vscode): Official VS Code extension.
-- [Domino Plugin for Claude Code](https://github.com/dominodatalab/domino-claude-plugin): Official plugin bundling the Domino MCP server, 20 skills, and 4 slash commands.
+## OpenAPI Specs
 
-## Docs
-- [API Guide](https://docs.dominodatalab.com/en/cloud/api_guide/f35c19/api-guide/): Reference for data science developers.
-- [The python-domino Library](https://docs.dominodatalab.com/en/cloud/api_guide/c5ef26/the-python-domino-library/): Python SDK guide.
-- [Documentation portal](https://docs.dominodatalab.com/): User, admin, and developer guides.
-- [GitHub organization](https://github.com/dominodatalab): Open-source clients, VS Code extension, and Terraform modules.
+- [public-api](/api-specs/cloud/public-api.json)
+- [workspace-file-audit-trail-api](/api-specs/cloud/workspace-file-audit-trail-api.json)
+- [flyte-native-api](/api-specs/cloud/flyte-native-api.json)
+- [flyte-extensions-api](/api-specs/cloud/flyte-extensions-api.json)
+- [public-api](/api-specs/6.3/public-api.json)
+- [workspace-file-audit-trail-api](/api-specs/6.3/workspace-file-audit-trail-api.json)
+- [flyte-native-api](/api-specs/6.3/flyte-native-api.json)
+- [flyte-extensions-api](/api-specs/6.3/flyte-extensions-api.json)
 
-## Artifacts
-- Authentication: authentication/domino-data-lab-authentication.yml
-- Packages / SDKs: packages/domino-data-lab-packages.yml
-- MCP server: mcp/domino-data-lab-mcp.yml
-- Conventions: conventions/domino-data-lab-conventions.yml
-- Domain security: security/domino-data-lab-domain-security.yml
+> The links below point to documentation indexes. Follow each `/_llms/` index recursively until you reach documentation pages.
+
+## Indexes
+
+- [Cloud (1135 pages)](https://docs.domino.ai/_llms/cloud.md): Documentation for Cloud.
+- [Cloud / Platform Capabilities (320 pages)](https://docs.domino.ai/_llms/cloud/platform-capabilities.md): Documentation for Cloud / Platform Capabilities.
+- [Cloud / Admin (100 pages)](https://docs.domino.ai/_llms/cloud/admin.md): Documentation for Cloud / Admin.
+- [Cloud / Reference (707 pages)](https://docs.domino.ai/_llms/cloud/reference.md): Documentation for Cloud / Reference.
+- [Cloud / Reference / API (693 pages)](https://docs.domino.ai/_llms/cloud/reference/api.md): Documentation for Cloud / Reference / API.
+- [Cloud / Reference / API / Domino Platform API (587 pages)](https://docs.domino.ai/_llms/cloud/reference/api/domino-platform-api.md): Documentation for Cloud / Reference / API / Domino Platform API.
+- [Cloud / Reference / API / Domino Platform API / Projects (27 pages)](https://docs.domino.ai/_llms/cloud/reference/api/domino-platform-api/projects.md): Documentation for Cloud / Reference / API / Domino Platform API / Projects.
+- [Cloud / Reference / API / Domino Platform API / Governance bundles (28 pages)](https://docs.domino.ai/_llms/cloud/reference/api/domino-platform-api/governance-bundles.md): Documentation for Cloud / Reference / API / Domino Platform API / Governance bundles.
+- [Cloud / Reference / API / Domino Platform API / NetApp Volumes (40 pages)](https://docs.domino.ai/_llms/cloud/reference/api/domino-platform-api/net-app-volumes.md): Documentation for Cloud / Reference / API / Domino Platform API / NetApp Volumes.
+- [6.3 (1208 pages)](https://docs.domino.ai/_llms/6-3.md): Documentation for 6.3.
+- [6.3 / Platform Capabilities (321 pages)](https://docs.domino.ai/_llms/6-3/platform-capabilities.md): Documentation for 6.3 / Platform Capabilities.
+- [6.3 / Admin (186 pages)](https://docs.domino.ai/_llms/6-3/admin.md): Documentation for 6.3 / Admin.
+- [6.3 / Reference (693 pages)](https://docs.domino.ai/_llms/6-3/reference.md): Documentation for 6.3 / Reference.
+- [6.3 / Reference / API (679 pages)](https://docs.domino.ai/_llms/6-3/reference/api.md): Documentation for 6.3 / Reference / API.
+- [6.3 / Reference / API / Domino Platform API (573 pages)](https://docs.domino.ai/_llms/6-3/reference/api/domino-platform-api.md): Documentation for 6.3 / Reference / API / Domino Platform API.
+- [6.3 / Reference / API / Domino Platform API / Datasets (29 pages)](https://docs.domino.ai/_llms/6-3/reference/api/domino-platform-api/datasets.md): Documentation for 6.3 / Reference / API / Domino Platform API / Datasets.
+- [6.3 / Reference / API / Domino Platform API / NetApp Volumes (40 pages)](https://docs.domino.ai/_llms/6-3/reference/api/domino-platform-api/net-app-volumes.md): Documentation for 6.3 / Reference / API / Domino Platform API / NetApp Volumes.
