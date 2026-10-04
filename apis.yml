@@ -49,7 +49,7 @@ tags:
 - Company
 - MLOps
 - Data Science
-- Machine-Learning
+- Machine Learning
 - AI Platform
 - Model Monitoring
 - Enterprise AI
@@ -61,6 +61,7 @@ tags_raw:
 - AI Platform
 - Model Monitoring
 - Enterprise AI
+- Machine-Learning
 apis: []
 maintainers:
 - FN: Kin Lane
