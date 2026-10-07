@@ -1,0 +1,39 @@
+# Pricing transcribed from the provider's own page — see provenance. Numbers are quoted, not derived.
+generated: '2026-10-07'
+method: searched
+source: https://domino.ai/pricing
+sources:
+- https://domino.ai/pricing
+provenance:
+  tool: all/0-working/economics/harvest_pricing.py
+  run: 20261007T104522
+  grounding: every price_text was found verbatim in the fetched page text
+audience: business-product
+pricing_basis: negotiated
+delivery:
+  delivery: managed+licensed
+  method: page
+  read: '2026-10-07'
+  evidence: Premium Self-managed (VPC or on-premises ) For enterprises seeking self-managed private/public
+    cloud deployment
+  managed_tier: Domino Cloud
+published: false
+note: No numeric price is published on the pricing page; Enterprise AI platform pricing page lists three
+  tiers with features and license counts but no numeric prices; all require a quote or contacting sales.
+  Self-managed (VPC/on-prem) and single-tenant SaaS offered under paid subscription.
+plan_count: 3
+plans:
+- name: Domino Cloud
+  price_text: Request a quote
+  period: none
+  included_quota: 5 service accounts, 5 admin licenses, unlimited consumer licenses, Premium support (2
+    business days), 1 deployment
+- name: Premium
+  price_text: Request a quote
+  period: none
+  included_quota: 5 service accounts, 5 admin licenses, unlimited consumer licenses, up to 2 deployments
+- name: Enterprise
+  price_text: Contact sales
+  period: none
+  included_quota: 10 service accounts, 10 admin licenses, unlimited consumer licenses, Enterprise support
+    (1 business day)
