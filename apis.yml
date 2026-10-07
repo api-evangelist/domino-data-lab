@@ -64,6 +64,8 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: Plans
+  url: plans/domino-data-lab-plans-pricing.yml
 - url: https://domino.ai/feed.xml
   type: BlogRSS
 - type: CLI
