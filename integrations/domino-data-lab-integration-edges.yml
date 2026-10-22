@@ -1,7 +1,38 @@
-edges: []
+edges:
+- partner_name: CRAN
+  partner: null
+  partner_match: null
+  type: register
+  direction: provider-built
+  category: official SDK (R)
+  evidence: https://cran.r-project.org/package=DominoDataR
+  channel: package-registry
+  relationship: distribution-channel
+  contract_reference:
+    register: CRAN (packages.rds, the public package metadata table)
+    spec_file: null
+    language: R
+    packages:
+    - name: DominoDataR
+      version: 0.3.1
+      title: '''Domino Data R SDK'''
+      released: '2025-11-26'
+      released_field: Published
+      lapsed: false
+      page: https://cran.r-project.org/package=DominoDataR
+      repo_leg: github-org:dominodatalab
+      publisher_leg: github-org:dominodatalab
+      matched_by: github-org
+    current: true
+    signal_note: 'an official R package on CRAN: distribution, not an integration; lapsed = no release in 24 months'
+    detected_by: sweep-cran-r-packages.py
+    detected: '2026-10-22'
+  detected_by: sweep-cran-r-packages.py
+  first_seen: '2026-10-22'
 generated: '2026-10-15'
-method: none
+method: searched
 source:
 - https://a2aregistry.org/api/agents
 checked:
 - https://a2aregistry.org/api/agents
+- https://cran.r-project.org/web/packages/packages.rds
